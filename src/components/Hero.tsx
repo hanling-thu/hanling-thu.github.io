@@ -4,14 +4,14 @@ import profileImage from "@/assets/profile-placeholder.jpg";
 
 const Hero = () => {
   return (
-    <section id="about" className="py-20 border-b">
+    <section id="about" className="py-20 bg-gradient-subtle">
       <div className="container">
-        <div className="flex flex-col md:flex-row items-start gap-12">
+        <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-shrink-0">
             <img
               src={profileImage}
-              alt="Guorui Xie - Profile"
-              className="w-48 h-48 rounded object-cover border"
+              alt="Profile"
+              className="w-64 h-64 rounded-full object-cover shadow-large ring-4 ring-primary/10"
             />
           </div>
           

@@ -47,54 +47,56 @@ const publications = [
 
 const Publications = () => {
   return (
-    <section id="publications" className="py-16 bg-muted/20 border-b">
+    <section id="publications" className="py-20 bg-muted/30">
       <div className="container">
-        <div className="mb-10">
-          <h2 className="text-2xl font-bold mb-3 font-serif">代表性论文 Selected Publications</h2>
-          <p className="text-muted-foreground mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">代表性论文 Selected Publications</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             已在 INFOCOM, ToN, TDSC, TC, WWW, ATC 等顶级会议和期刊发表论文20余篇
           </p>
-          <Button variant="outline" size="sm" asChild>
-            <a href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" target="_blank" rel="noopener noreferrer" className="gap-2">
-              <ExternalLink className="h-4 w-4" />
-              完整论文列表 (Google Scholar)
-            </a>
-          </Button>
+          <div className="mt-4">
+            <Button variant="outline" asChild>
+              <a href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <ExternalLink className="h-4 w-4" />
+                完整论文列表 (Google Scholar)
+              </a>
+            </Button>
+          </div>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-4xl mx-auto space-y-6">
           {publications.map((pub, index) => (
-            <Card key={index} className="hover:shadow-soft transition-shadow">
-              <CardHeader className="pb-3">
+            <Card key={index} className="transition-all hover:shadow-medium">
+              <CardHeader>
                 <div className="flex items-start justify-between gap-4 flex-wrap">
                   <div className="flex-1">
-                    <CardTitle className="text-lg mb-2 font-semibold">{pub.title}</CardTitle>
-                    <CardDescription className="text-sm">
+                    <CardTitle className="text-xl mb-2">{pub.title}</CardTitle>
+                    <CardDescription className="text-base">
                       {pub.authors}
                     </CardDescription>
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="text-sm text-muted-foreground mt-2">
                       {pub.venue}, {pub.year}
                     </p>
                   </div>
                   <div className="flex gap-2">
-                    <Badge variant="secondary" className="text-xs">{pub.type}</Badge>
-                    <Badge className="bg-primary text-xs">{pub.rank}</Badge>
+                    <Badge variant="secondary">{pub.type}</Badge>
+                    <Badge className="bg-primary">{pub.rank}</Badge>
                   </div>
                 </div>
               </CardHeader>
-              <CardContent className="pt-0">
-                <div className="flex flex-wrap gap-1.5 mb-3">
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mb-4">
                   {pub.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="outline" className="text-xs">
+                    <Badge key={tagIndex} variant="outline">
                       {tag}
                     </Badge>
                   ))}
                 </div>
                 {pub.links?.github && (
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="gap-1.5 h-8 text-xs" asChild>
+                    <Button variant="outline" size="sm" className="gap-2" asChild>
                       <a href={pub.links.github} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-3 w-3" />
+                        <ExternalLink className="h-4 w-4" />
                         GitHub
                       </a>
                     </Button>
