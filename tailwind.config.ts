@@ -51,21 +51,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        academic: {
-          blue: "hsl(var(--academic-blue))",
-          "blue-dark": "hsl(var(--academic-blue-dark))",
-          gray: "hsl(var(--academic-gray))",
-          light: "hsl(var(--academic-light))",
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-bg))",
+          foreground: "hsl(var(--sidebar-fg))",
         },
-      },
-      backgroundImage: {
-        'gradient-hero': 'var(--gradient-hero)',
-        'gradient-subtle': 'var(--gradient-subtle)',
+        link: "hsl(var(--link-color))",
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
-        'medium': 'var(--shadow-medium)',
-        'large': 'var(--shadow-large)',
       },
       borderRadius: {
         lg: "var(--radius)",

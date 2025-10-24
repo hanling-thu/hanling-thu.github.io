@@ -26,41 +26,16 @@ const researchAreas = [
 
 const Research = () => {
   return (
-    <section id="research" className="py-20">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">研究方向 Research Interests</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            主要研究领域包括可编程网络、P4技术、AI/LLM网络应用
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {researchAreas.map((area, index) => {
-            const Icon = area.icon;
-            return (
-              <Card 
-                key={index} 
-                className="transition-all hover:shadow-medium hover:-translate-y-1"
-              >
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">{area.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    {area.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-      </div>
+    <section id="research" className="mb-12">
+      <h2 className="text-2xl font-bold mb-6">Research Interests</h2>
+      
+      <ul className="list-disc list-inside space-y-2 ml-2">
+        {researchAreas.map((area, index) => (
+          <li key={index} className="text-base">
+            <strong>{area.title}</strong>: {area.description}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
