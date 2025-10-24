@@ -26,13 +26,14 @@ const researchAreas = [
 
 const Research = () => {
   return (
-    <section id="research" className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Research Interests</h2>
+    <section id="research" className="mb-16">
+      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Research Interests</h2>
       
-      <ul className="list-disc list-inside space-y-2 ml-2">
+      <ul className="space-y-3">
         {researchAreas.map((area, index) => (
-          <li key={index} className="text-base">
-            <strong>{area.title}</strong>: {area.description}
+          <li key={index} className="text-base leading-relaxed pl-6 border-l-2 border-muted hover:border-primary transition-colors">
+            <strong className="text-foreground">{area.title}</strong>
+            <span className="text-foreground/80">: {area.description}</span>
           </li>
         ))}
       </ul>

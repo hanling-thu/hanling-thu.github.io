@@ -15,18 +15,18 @@ const newsItems = [
 
 const News = () => {
   return (
-    <section id="news" className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Latest News</h2>
+    <section id="news" className="mb-16">
+      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Latest News</h2>
       
-      <div className="space-y-4">
+      <div className="space-y-6">
         {newsItems.map((item, index) => {
           const Icon = item.icon;
           return (
-            <div key={index} className="flex gap-4">
-              <Icon className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+            <div key={index} className="flex gap-4 group">
+              <Icon className="h-5 w-5 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
               <div>
-                <p className="text-sm text-muted-foreground mb-1">{item.date}</p>
-                <p className="text-base leading-relaxed">{item.content}</p>
+                <p className="text-sm text-muted-foreground mb-2 font-medium">{item.date}</p>
+                <p className="text-base leading-relaxed text-foreground/90">{item.content}</p>
               </div>
             </div>
           );

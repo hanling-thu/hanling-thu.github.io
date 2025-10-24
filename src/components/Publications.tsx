@@ -30,39 +30,39 @@ const publications = [
 
 const Publications = () => {
   return (
-    <section id="publications" className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Selected Publications</h2>
+    <section id="publications" className="mb-16">
+      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Selected Publications</h2>
       
-      <p className="text-base mb-4">
+      <p className="text-base mb-6">
         [<a 
           href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-link hover:underline"
+          className="text-link hover:underline font-medium"
         >
           Full List on Google Scholar
         </a>]
       </p>
       
-      <ul className="space-y-4">
+      <ul className="space-y-6">
         {publications.map((pub, index) => (
-          <li key={index} className="text-base">
-            <p className="mb-1">
-              <strong>{pub.title}</strong>
+          <li key={index} className="text-base pl-6 border-l-2 border-muted hover:border-primary transition-colors pb-4">
+            <p className="mb-2 font-semibold text-foreground leading-relaxed">
+              {pub.title}
             </p>
-            <p className="text-sm text-muted-foreground mb-1">
+            <p className="text-sm text-muted-foreground mb-2">
               {pub.authors}
             </p>
-            <p className="text-sm">
-              <em>{pub.venue}</em>
-              {pub.note && <span className="ml-2 font-semibold text-primary">({pub.note})</span>}
+            <p className="text-sm mb-2">
+              <em className="text-foreground/80">{pub.venue}</em>
+              {pub.note && <span className="ml-2 font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded text-xs">{pub.note}</span>}
             </p>
             {pub.github && (
               <a 
                 href={pub.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm text-link hover:underline mt-1"
+                className="inline-flex items-center gap-1 text-sm text-link hover:underline"
               >
                 <Github className="h-4 w-4" />
                 [GitHub]

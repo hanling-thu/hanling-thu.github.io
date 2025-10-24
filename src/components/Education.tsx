@@ -27,20 +27,20 @@ const awards = [
 
 const Education = () => {
   return (
-    <section id="education" className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Education & Awards</h2>
+    <section id="education" className="mb-16">
+      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Education & Awards</h2>
       
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div>
-          <p className="font-semibold mb-3 flex items-center gap-2">
-            <GraduationCap className="h-4 w-4" />
+          <p className="font-semibold mb-4 flex items-center gap-2 text-lg text-foreground">
+            <GraduationCap className="h-5 w-5 text-primary" />
             Education
           </p>
-          <div className="space-y-2 ml-6">
+          <div className="space-y-3">
             {education.map((edu, index) => (
-              <div key={index}>
-                <p className="text-base">
-                  <strong>{edu.degree}</strong>, {edu.institution}, {edu.year}
+              <div key={index} className="pl-6 border-l-2 border-muted hover:border-primary transition-colors">
+                <p className="text-base text-foreground/90">
+                  <strong className="text-foreground">{edu.degree}</strong>, {edu.institution}, {edu.year}
                 </p>
               </div>
             ))}
@@ -48,13 +48,15 @@ const Education = () => {
         </div>
         
         <div>
-          <p className="font-semibold mb-3 flex items-center gap-2">
-            <Award className="h-4 w-4" />
+          <p className="font-semibold mb-4 flex items-center gap-2 text-lg text-foreground">
+            <Award className="h-5 w-5 text-primary" />
             Honors & Awards
           </p>
-          <ul className="list-disc list-inside space-y-1 ml-6 text-base">
+          <ul className="space-y-2 text-base">
             {awards.map((award, index) => (
-              <li key={index}>{award}</li>
+              <li key={index} className="pl-6 border-l-2 border-muted hover:border-primary transition-colors text-foreground/90">
+                • {award}
+              </li>
             ))}
           </ul>
         </div>
