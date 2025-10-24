@@ -4,26 +4,32 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} 学术个人主页. All rights reserved.
+            © {new Date().getFullYear()} 谢国锐 Guorui Xie. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a 
-              href="#" 
+              href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Google Scholar
             </a>
             <a 
-              href="#" 
+              href="https://github.com/xgr19" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              ResearchGate
+              GitHub
             </a>
             <a 
-              href="#" 
+              href="https://smartinternet.group/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              ORCID
+              Research Group
             </a>
           </div>
         </div>

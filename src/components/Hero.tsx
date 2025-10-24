@@ -18,30 +18,36 @@ const Hero = () => {
           <div className="flex-1 space-y-6">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-2 font-serif">
-                张三
+                谢国锐 Guorui Xie
               </h1>
               <p className="text-xl text-muted-foreground">
-                博士研究生 | PhD Candidate
+                助理研究员（博导）| Assistant Researcher (PhD Supervisor)
               </p>
               <p className="text-lg text-muted-foreground mt-2">
-                计算机科学与技术学院
+                鹏城国家实验室 | Pengcheng Laboratory
               </p>
               <p className="text-lg text-muted-foreground">
-                某某大学
+                清华智能网络团队
               </p>
             </div>
 
             <div className="prose prose-lg max-w-none">
+              <p className="text-foreground/80 mb-3">
+                I received my BEng (2019) and PhD (2024) degrees from SYSU and Tsinghua (China), respectively. 
+                I was also a CSC-funded research visitor at Polimi (Italy, 2023~2024).
+              </p>
               <p className="text-foreground/80">
-                我的研究兴趣包括人工智能、机器学习、计算机视觉等领域。
-                目前专注于深度学习在计算机视觉中的应用，特别是在图像识别、目标检测和语义分割方面的研究。
+                我在2019年本科毕业于中山大学、2024年博士毕业于清华大学，曾获国家留学基金资助海外联培（2023~2024）、腾讯青云计划。
+                主要研究可编程网络、P4技术、AI/LLM的网络应用等。
               </p>
             </div>
 
             <div className="flex gap-4">
-              <Button size="lg" className="gap-2">
-                <FileText className="h-5 w-5" />
-                下载简历
+              <Button size="lg" className="gap-2" asChild>
+                <a href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" target="_blank" rel="noopener noreferrer">
+                  <FileText className="h-5 w-5" />
+                  Google Scholar
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="gap-2" asChild>
                 <a href="#contact">

@@ -3,24 +3,24 @@ import { Brain, Eye, Network, Cpu } from "lucide-react";
 
 const researchAreas = [
   {
-    icon: Brain,
-    title: "深度学习",
-    description: "研究深度神经网络架构设计与优化方法，包括卷积神经网络、循环神经网络和Transformer等模型。",
-  },
-  {
-    icon: Eye,
-    title: "计算机视觉",
-    description: "专注于图像识别、目标检测、语义分割等视觉任务，探索视觉理解的新方法。",
-  },
-  {
     icon: Network,
-    title: "多模态学习",
-    description: "研究视觉-语言融合、跨模态检索等多模态学习问题，构建统一的多模态表示。",
+    title: "可编程网络 Programmable Network",
+    description: "研究基于P4的可编程交换机技术，探索网络数据平面的灵活编程能力，实现高性能的网络功能。",
   },
   {
     icon: Cpu,
-    title: "模型压缩",
-    description: "探索神经网络压缩、知识蒸馏、模型剪枝等技术，实现高效的模型部署。",
+    title: "P4技术",
+    description: "深入研究P4语言及其在网络设备中的应用，开发创新的数据平面算法和架构。",
+  },
+  {
+    icon: Brain,
+    title: "AI/LLM网络应用",
+    description: "探索人工智能和大语言模型在网络领域的应用，包括智能网络攻击检测、网络优化等。",
+  },
+  {
+    icon: Eye,
+    title: "网内智能 In-Network Intelligence",
+    description: "研究在网络设备中实现智能算法，通过知识蒸馏等技术在可编程交换机上部署机器学习模型。",
   },
 ];
 
@@ -29,9 +29,9 @@ const Research = () => {
     <section id="research" className="py-20">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">研究方向</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">研究方向 Research Interests</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            我的研究主要集中在以下几个方向
+            主要研究领域包括可编程网络、P4技术、AI/LLM网络应用
           </p>
         </div>
 

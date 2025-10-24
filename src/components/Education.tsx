@@ -3,26 +3,33 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "博士",
+    degree: "博士 PhD",
     major: "计算机科学与技术",
-    school: "某某大学",
-    period: "2021 - 至今",
-    description: "研究方向：深度学习与计算机视觉",
+    school: "清华大学 | Tsinghua University",
+    period: "2019 - 2024",
+    description: "清华智能网络团队，导师：xxx教授",
   },
   {
-    degree: "硕士",
-    major: "计算机科学与技术",
-    school: "某某大学",
-    period: "2018 - 2021",
-    description: "GPA: 3.9/4.0，获优秀毕业生",
+    degree: "访问学者 Visiting Scholar",
+    major: "计算机科学",
+    school: "米兰理工大学 | Politecnico di Milano",
+    period: "2023 - 2024",
+    description: "国家留学基金委(CSC)资助海外联合培养",
   },
   {
-    degree: "学士",
-    major: "软件工程",
-    school: "某某大学",
-    period: "2014 - 2018",
-    description: "GPA: 3.8/4.0，专业排名前5%",
+    degree: "学士 BEng",
+    major: "计算机科学与技术",
+    school: "中山大学 | Sun Yat-sen University",
+    period: "2015 - 2019",
+    description: "本科毕业",
   },
+];
+
+const honors = [
+  "腾讯青云计划",
+  "国家留学基金委(CSC)资助",
+  "多名协助指导学生获得华五推免offer",
+  "多名协助指导学生获得大厂人才计划offer",
 ];
 
 const Education = () => {
@@ -30,7 +37,7 @@ const Education = () => {
     <section className="py-20 bg-muted/30">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">教育背景</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">教育背景 Education</h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">
@@ -42,7 +49,7 @@ const Education = () => {
                     <GraduationCap className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <div className="flex items-start justify-between gap-4 mb-2">
+                    <div className="flex items-start justify-between gap-4 flex-wrap mb-2">
                       <CardTitle className="text-xl">{edu.degree} - {edu.major}</CardTitle>
                       <span className="text-sm text-muted-foreground whitespace-nowrap">{edu.period}</span>
                     </div>
@@ -57,6 +64,22 @@ const Education = () => {
               </CardContent>
             </Card>
           ))}
+
+          <Card className="border-primary/20 bg-primary/5">
+            <CardHeader>
+              <CardTitle className="text-xl">荣誉与成就 Honors & Awards</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                {honors.map((honor, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">{honor}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
