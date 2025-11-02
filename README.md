@@ -65,17 +65,18 @@ This project is built with:
 ### Deploy to Lovable
 Simply open [Lovable](https://lovable.dev/projects/4db06c63-f9f3-4e20-926a-1ef4c05d902b) and click on Share -> Publish.
 
-### Deploy to GitHub Pages
+### Deploy to GitHub Pages (User Site)
 
-This project is pre-configured for GitHub Pages deployment:
+This project is configured to deploy to `https://<username>.github.io/`
 
-1. **Push to GitHub**: Make sure your code is pushed to a GitHub repository
-2. **Enable GitHub Pages**:
-   - Go to your repository Settings
-   - Navigate to Pages (under Code and automation)
-   - Under "Build and deployment":
-     - Source: Select "GitHub Actions"
-3. **Create deployment workflow**: Add `.github/workflows/deploy.yml` with:
+**Important**: Your repository name MUST be `<username>.github.io` (replace `<username>` with your GitHub username)
+
+1. **Create repository**: Name it exactly `<username>.github.io`
+2. **Push code**: Push this project to that repository
+3. **Enable GitHub Pages**:
+   - Go to repository Settings → Pages
+   - Source: Select "GitHub Actions"
+4. **Create workflow**: Add `.github/workflows/deploy.yml`:
 
 ```yaml
 name: Deploy to GitHub Pages
@@ -125,12 +126,12 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-4. **Access your site**: After deployment, your site will be available at `https://<username>.github.io/<repository-name>/`
+5. **Access your site**: `https://<username>.github.io/`
 
-**Note**: The project includes:
-- `.nojekyll` file to prevent Jekyll processing
-- `404.html` for SPA routing support
-- Relative base path configuration in `vite.config.ts`
+**Project configuration**:
+- Base path: `/` (for user site at root)
+- `.nojekyll` prevents Jekyll processing
+- `404.html` enables SPA routing
 
 ## Can I connect a custom domain to my Lovable project?
 

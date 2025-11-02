@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./", // 使用相对路径，兼容 GitHub Pages
+  base: "/", // 部署到 <username>.github.io 根路径
   server: {
     host: "::",
     port: 8080,
