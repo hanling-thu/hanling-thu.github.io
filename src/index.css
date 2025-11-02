@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    --primary: 245 58% 51%;
+    --primary: 240 42% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 96%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 262 52% 58%;
+    --accent: 255 40% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -34,14 +34,14 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 245 58% 51%;
+    --ring: 240 42% 48%;
 
     --radius: 0.25rem;
 
     /* Academic theme colors */
-    --sidebar-bg: 245 58% 51%;
+    --sidebar-bg: 240 42% 48%;
     --sidebar-fg: 0 0% 100%;
-    --link-color: 255 65% 60%;
+    --link-color: 250 45% 52%;
     
     /* Shadows */
     --shadow-soft: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
@@ -60,7 +60,7 @@ All colors MUST be HSL.
     --popover: 0 0% 18%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 245 58% 51%;
+    --primary: 240 42% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 18%;
@@ -69,7 +69,7 @@ All colors MUST be HSL.
     --muted: 0 0% 18%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 262 52% 58%;
+    --accent: 255 40% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -77,11 +77,11 @@ All colors MUST be HSL.
 
     --border: 0 0% 25%;
     --input: 0 0% 25%;
-    --ring: 245 58% 51%;
+    --ring: 240 42% 48%;
     
-    --sidebar-bg: 245 58% 46%;
+    --sidebar-bg: 240 42% 43%;
     --sidebar-fg: 0 0% 100%;
-    --link-color: 255 65% 65%;
+    --link-color: 250 45% 58%;
   }
 }
 
