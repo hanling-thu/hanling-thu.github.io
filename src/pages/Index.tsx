@@ -2,49 +2,33 @@ import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
 import Research from "@/components/Research";
 import Publications from "@/components/Publications";
-import Services from "@/components/Services";
-import Education from "@/components/Education";
+import Patents from "@/components/Patents";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Sidebar />
-      <main className="lg:ml-72 py-8 px-4 sm:px-6 lg:py-16 lg:px-20 max-w-6xl">
-        <section className="mb-12 lg:mb-16 leading-relaxed">
-          <p className="text-base lg:text-lg mb-4 text-foreground/90">
-            Welcome! I received my Bsc (2017) from <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">CSU</a>, Msc (2020) from Tsnghua University, and <a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Tsinghua</a> (China), respectively. 
-            I am currently an assistant researcher at <a href="https://www.pcl.ac.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Pengcheng Laboratory (PCL)</a>.
-          </p>
-          <p className="text-base lg:text-lg mb-6 text-foreground/90">
-            我在2017年本科毕业于中南大学、2020年硕士毕业于清华大学、2025年博士毕业于清华大学。目前任职于鹏城实验室，担任助理研究员，课题组官网Smart Internet Group（www.smartinternet.group）。
-            主要研究分布式系统、大模型推理加速、边云协同计算等。
-          </p>
-          
-          <p className="text-sm lg:text-base mb-3">
-            Research interests: <strong className="text-foreground">Distributed System, LLM Inference Acceleration, edge-cloud colloborative computing</strong>
-          </p>
-          
-          <p className="text-sm lg:text-base mb-6">
-            [<a 
-              href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-link hover:underline"
-            >
-              Google Scholar
-            </a>]
-          </p>
-          
-          <p className="text-sm lg:text-base font-semibold text-foreground bg-muted px-3 py-2 lg:px-4 lg:py-3 rounded border-l-4 border-primary">
-            欢迎对分布式系统、大模型推理加速、边云协同计算的同学联系我！
-          </p>
-        </section>
+      <main className="px-5 py-8 sm:px-8 lg:ml-80 lg:px-16 lg:py-12">
+        <div className="max-w-7xl">
+          <section className="mb-10 leading-relaxed">
+            <p className="mb-5 max-w-5xl text-base text-foreground/90 lg:text-lg">
+              我于2017年本科毕业于
+              <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 中南大学 </a>
+              ，2020年硕士毕业于
+              <a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 清华大学 </a>
+              ，2025年博士毕业于<a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 清华大学 </a>。2020年至2021年曾任
+              <a href="https://www.pcl.ac.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 鹏城实验室 </a>
+              算法工程师，现任<strong className="font-semibold text-foreground"> 鹏城实验室助理研究员、博士生导师 </strong>，目前所在团队为
+              <a href="https://www.smartinternet.group/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 清华智能网络团队 </a>
+              。我曾获香港博士生论坛 Best Paper Award、鹏城实验室优秀博士生、鹏城实验室人才发展奖学金、清华大学校级综合奖学金等荣誉，长期担任NeurIPS、AAAI、ICLR、ECCV、CVPR、MM、IEEE Network等会议和期刊审稿人。
+            </p>
+          </section>
 
-        <News />
-        <Research />
-        <Publications />
-        <Services />
-        <Education />
+          <Research />
+          <News />
+          <Publications />
+          <Patents />
+        </div>
       </main>
     </div>
   );

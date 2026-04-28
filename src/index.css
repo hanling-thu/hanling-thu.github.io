@@ -8,80 +8,80 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 20%;
+    --background: 285 22% 98%;
+    --foreground: 222 18% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 222 18% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 222 18% 18%;
 
-    --primary: 240 42% 48%;
+    --primary: 291 82% 26%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 287 18% 93%;
+    --secondary-foreground: 222 18% 18%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 288 14% 91%;
+    --muted-foreground: 222 10% 43%;
 
-    --accent: 255 40% 55%;
+    --accent: 42 68% 38%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 240 42% 48%;
+    --border: 286 14% 83%;
+    --input: 286 14% 83%;
+    --ring: 291 82% 26%;
 
     --radius: 0.25rem;
 
-    /* Academic theme colors */
-    --sidebar-bg: 240 42% 48%;
+    /* Tsinghua-inspired academic theme colors */
+    --sidebar-bg: 291 82% 20%;
     --sidebar-fg: 0 0% 100%;
-    --link-color: 250 45% 52%;
+    --link-color: 291 82% 26%;
     
     /* Shadows */
-    --shadow-soft: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-soft: 0 12px 30px -24px hsl(291 82% 20% / 0.35);
     
     /* Transitions */
     --transition-smooth: all 0.2s ease;
   }
 
   .dark {
-    --background: 0 0% 13%;
+    --background: 288 18% 12%;
     --foreground: 0 0% 95%;
 
-    --card: 0 0% 18%;
+    --card: 288 14% 17%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 18%;
+    --popover: 288 14% 17%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 240 42% 48%;
+    --primary: 291 58% 62%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 18%;
+    --secondary: 288 14% 20%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 0 0% 18%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 288 14% 20%;
+    --muted-foreground: 285 8% 68%;
 
-    --accent: 255 40% 55%;
+    --accent: 42 58% 52%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
-    --ring: 240 42% 48%;
+    --border: 288 12% 28%;
+    --input: 288 12% 28%;
+    --ring: 291 58% 62%;
     
-    --sidebar-bg: 240 42% 43%;
+    --sidebar-bg: 291 70% 22%;
     --sidebar-fg: 0 0% 100%;
-    --link-color: 250 45% 58%;
+    --link-color: 291 58% 70%;
   }
 }
 
@@ -92,5 +92,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "kern";
   }
 }

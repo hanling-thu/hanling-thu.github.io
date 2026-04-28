@@ -1,34 +1,28 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Eye, Network, Cpu } from "lucide-react";
-
 const researchAreas = [
   {
-    icon: Network,
     title: "分布式系统",
-    description: "研究分布式模型推理系统。",
+    description: "面向大模型推理、实时视频分析等任务，研究系统架构、任务调度、性能建模与资源管理。",
   },
   {
-    icon: Cpu,
     title: "大模型推理加速",
-    description: "投机解码、MoE等。",
+    description: "关注在线推理中的吞吐、时延和成本问题，研究投机解码、MoE推理、并行推理、缓存复用和异构资源分配。",
   },
   {
-    icon: Brain,
     title: "边云协同计算",
-    description: "边缘智能",
-  }
+    description: "面向边缘智能、多租户边缘服务和边云视频分析，在带宽、算力和延迟约束下构建高效可靠的协同机制。",
+  },
 ];
 
 const Research = () => {
   return (
-    <section id="research" className="mb-16">
-      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Research Interests</h2>
-      
-      <ul className="space-y-3">
+    <section id="research" className="mb-14">
+      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">研究方向</h2>
+
+      <ul className="space-y-2.5">
         {researchAreas.map((area, index) => (
-          <li key={index} className="text-base leading-relaxed pl-6 border-l-2 border-muted hover:border-primary transition-colors">
-            <strong className="text-foreground">{area.title}</strong>
-            <span className="text-foreground/80">: {area.description}</span>
+          <li key={index} className="grid gap-1 border-l-2 border-muted pl-4 transition-colors hover:border-primary md:grid-cols-[10rem_1fr] md:gap-5">
+            <h3 className="text-base font-semibold text-foreground">{area.title}</h3>
+            <p className="text-base leading-snug text-foreground/75">{area.description}</p>
           </li>
         ))}
       </ul>

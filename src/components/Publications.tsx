@@ -1,144 +1,180 @@
 import { Github } from "lucide-react";
 
-// replace publications with my own (listed below), you may want to search for the metadata
-// HoloTrace: LLM-based Bidirectional Causal Knowledge Graph for Edge-Cloud Video Anomaly Detection
-// Hanling Wang, Qing Li, Li Chen et al.
-// •
-// MM '25
-// •
-// Oct 2025
-
-// PEE: Precise ECN Encoding for Efficient Congestion Control in Data Center Networks
-// Changlin Jiang, Yi Wu, Hanling Wang et al.
-// •
-// 2025 IEEE 45th International Conference on Distributed Computing Systems (ICDCS)
-// •
-// Jul 2025
-
-// VaVLM: Toward Efficient Edge-Cloud Video Analytics With Vision-Language Models
-// Yang Zhang, Hanling Wang, Qingshun Bai et al.
-// •
-// IEEE Transactions on Broadcasting
-// •
-// Jan 2025
-
-// ParaLoupe: Real-Time Video Analytics on Edge Cluster via Mini Model Parallelization
-// Hanling Wang, Qing Li, Haidong Kang et al.
-// •
-// IEEE Transactions on Mobile Computing
-// •
-// Aug 2024
-
-// Joint Configuration Optimization and GPU Allocation for Multi-Tenant Real-Time Video Analytics on Resource-Constrained Edge
-// Hanling Wang, Tianyu Li, Mei Zhang et al.
-// •
-// IEEE Transactions on Mobile Computing
-// •
-// Jan 2024
-
-// CL-Shield: A Continuous Learning System for Protecting User Privacy
-// Tianyu Li, Hanling Wang, Qing Li et al.
-// •
-// IEEE Transactions on Mobile Computing
-// •
-// Jan 2024
-
-// SkyNet: Multi-Drone Cooperation for Real-Time Person Identification and Localization
-// Junkun Peng, Qing Li, Yuanzheng Tan et al.
-// •
-// IEEE INFOCOM 2023 - IEEE Conference on Computer Communications
-// •
-// May 2023
-
-// VaBUS: Edge-Cloud Real-Time Video Analytics via Background Understanding and Subtraction
-// Hanling Wang, Qing Li, Heyang Sun et al.
-// •
-// IEEE Journal on Selected Areas in Communications
-// •
-// Nov 2022
-
-// Anomaly detection in surface mount technology process using multi-modal data
-// Mingyang Li, Hanling Wang, Yue Zhang et al.
-// •
-// SenSys '19
-// •
-// Nov 2019
-
-// Unsupervised anomaly detection via generative adversarial networks
-// Hanling Wang, Mingyang Li, Fei Ma et al.
-// •
-// IPSN '19
-// •
-
-
 const publications = [
   {
-    title: "Intelligent In-Network Attack Detection on Programmable Switches with Soterv2",
-    authors: "G. Xie, Q. Li, C. Cui, et al.",
-    venue: "IEEE TDSC 2024",
-    note: "CCF A",
+    title: "SketchVision: Bandwidth-Efficient Edge-Cloud Video Object Detection via Compressed Sketches",
+    authors: "Hanling Wang, Qing Li, Zhangzhang Jiang, Zepeng Bao, Yong Jiang, Zhenhui Yuan, Gabriel-Miro Muntean",
+    venue: "IEEE Transactions on Broadcasting, 2026",
+    note: "JCR Q1",
+    // link: "",
   },
   {
-    title: "Generating neural networks for diverse networking classification tasks via hardware-aware neural architecture search",
-    authors: "G. Xie, Q. Li, Z. Shi, et al.",
-    venue: "IEEE TC 2023",
+    title: "JumpDASH: LLM-Based Content Perception for Intelligent Jumping DASH in Mobile Adaptive Video Streaming",
+    authors: "Hanling Wang, Tianli Zhou, Qing Li, Yong Jiang, Gabriel-Miro Muntean",
+    venue: "IEEE Transactions on Networking, 2025",
     note: "CCF A",
+    link: "https://ieeexplore.ieee.org/document/11216135",
+    // github: "",
   },
   {
-    title: "Empowering in-network classification in programmable switches by binary decision tree and knowledge distillation",
-    authors: "G. Xie, Q. Li, G. Duan, J. Lin, et al.",
-    venue: "IEEE/ACM ToN 2023",
+    title: "Revolutionizing Training-Free NAS: Towards Efficient Automatic Proxy Discovery via Large Language Models",
+    authors: "Haidong Kang, Lihong Lin, Hanling Wang",
+    venue: "NeurIPS, 2025",
     note: "CCF A",
+    link: "https://neurips.cc/virtual/2025/loc/san-diego/poster/120003",
+    // github: "",
   },
   {
-    title: "Mousika: enable general in-network intelligence in programmable switches by knowledge distillation",
-    authors: "G. Xie, Q. Li, Y. Dong, G. Duan, et al.",
-    venue: "IEEE INFOCOM 2022",
+    title: "HoloTrace: LLM-based Bidirectional Causal Knowledge Graph for Edge-Cloud Video Anomaly Detection",
+    authors: "Hanling Wang, Qing Li, Li Chen, Haidong Kang, Fei Ma, Yong Jiang",
+    venue: "ACM Multimedia (MM), 2025",
     note: "CCF A",
-    github: "https://github.com/xgr19/Mousika",
+    doi: "https://dl.acm.org/doi/10.1145/3746027.3755185",
+  },
+  {
+    title: "PEE: Precise ECN Encoding for Efficient Congestion Control in Data Center Networks",
+    authors: "Changlin Jiang, Yi Wu, Hanling Wang, Feixue Han, Dayi Zhao, Yong Jiang, Gareth Tyson, Qing Li",
+    venue: "IEEE International Conference on Distributed Computing Systems (ICDCS), 2025",
+    note: "CCF B",
+    doi: "https://ieeexplore.ieee.org/document/11183753",
+  },
+  {
+    title: "VaVLM: Toward Efficient Edge-Cloud Video Analytics With Vision-Language Models",
+    authors: "Yang Zhang, Hanling Wang, Qing Bai, Haifeng Liang, Peican Zhu, Gabriel-Miro Muntean, Qing Li",
+    venue: "IEEE Transactions on Broadcasting, 2025",
+    note: "JCR Q1",
+    doi: "https://ieeexplore.ieee.org/document/10947590",
+  },
+  {
+    title: "ParaLoupe: Real-Time Video Analytics on Edge Cluster via Mini Model Parallelization",
+    authors: "Hanling Wang, Qing Li, Haidong Kang, Dieli Hu, Lianbo Ma, Gareth Tyson, Zhenhui Yuan, Yong Jiang",
+    venue: "IEEE Transactions on Mobile Computing, 2024",
+    note: "CCF A",
+    doi: "https://ieeexplore.ieee.org/document/10623423",
+  },
+  {
+    title: "Joint Configuration Optimization and GPU Allocation for Multi-Tenant Real-Time Video Analytics on Resource-Constrained Edge",
+    authors: "Hanling Wang*, Tianyu Li*, Mei Zhang*, Qing Li, Huan Cui, Yong Jiang, Zhenhui Yuan",
+    venue: "IEEE Transactions on Mobile Computing, 2024",
+    note: "CCF A",
+    doi: "https://ieeexplore.ieee.org/document/10684974",
+  },
+  {
+    title: "CL-Shield: A Continuous Learning System for Protecting User Privacy",
+    authors: "Tianyu Li, Hanling Wang, Qing Li, Yong Jiang, Zhenhui Yuan",
+    venue: "IEEE Transactions on Mobile Computing, 2024",
+    note: "CCF A",
+    doi: "https://ieeexplore.ieee.org/document/10764772/",
+  },
+  {
+    title: "SkyNet: Multi-Drone Cooperation for Real-Time Person Identification and Localization",
+    authors: "Junkun Peng, Qing Li, Yuanzheng Tan, Dan Zhao, Zhenhui Yuan, Jinhua Chen, Hanling Wang, Yong Jiang",
+    venue: "IEEE INFOCOM, 2023",
+    note: "CCF A",
+    doi: "https://ieeexplore.ieee.org/document/10228978",
+  },
+  {
+    title: "VaBUS: Edge-Cloud Real-Time Video Analytics via Background Understanding and Subtraction",
+    authors: "Hanling Wang, Qing Li, Heyang Sun, Zuozhou Chen, Yingqian Hao, Junkun Peng, Zhenhui Yuan, Junsheng Fu, Yong Jiang",
+    venue: "IEEE Journal on Selected Areas in Communications, 2023",
+    note: "CCF A",
+    doi: "https://ieeexplore.ieee.org/document/9953098/",
+    // github: "https://github.com/kongyanye/VaBUS",
+  },
+  {
+    title: "Poster Abstract: Anomaly Detection in Surface Mount Technology Process Using Multi-Modal Data",
+    authors: "Mingyang Li, Hanling Wang, Yue Zhang, Shao-Lun Huang, Lin Zhang",
+    venue: "ACM SenSys, 2019",
+    note: "CCF B poster",
+    doi: "https://dl.acm.org/doi/10.1145/3356250.3361942",
+  },
+  {
+    title: "Poster Abstract: Unsupervised Anomaly Detection via Generative Adversarial Networks",
+    authors: "Hanling Wang, Mingyang Li, Fei Ma, Shao-Lun Huang, Lin Zhang",
+    venue: "ACM/IEEE IPSN, 2019",
+    note: "CCF B poster",
+    doi: "https://ieeexplore.ieee.org/document/8732560",
   },
 ];
 
+const renderAuthors = (authors: string) => {
+  const parts = authors.split(/(Hanling Wang|王汉凌)/g);
+
+  return parts.map((part, index) =>
+    part === "Hanling Wang" || part === "王汉凌" ? (
+      <strong key={index} className="font-semibold text-primary">
+        {part}
+      </strong>
+    ) : (
+      <span key={index}>{part}</span>
+    ),
+  );
+};
+
+const getNoteClassName = (note: string) =>
+  note === "CCF A"
+    ? "bg-primary/10 text-primary"
+    : note.includes("JCR")
+      ? "bg-secondary text-foreground/80"
+      : "bg-accent/10 text-accent";
+
+const getPublicationLink = (pub: { doi?: string; link?: string }) =>
+  pub.doi ? `https://doi.org/${pub.doi}` : pub.link;
+
 const Publications = () => {
   return (
-    <section id="publications" className="mb-16">
-      <h2 className="text-3xl font-bold mb-8 font-serif border-b-2 border-primary pb-2">Selected Publications</h2>
-      
-      <p className="text-base mb-6">
-        [<a 
-          href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" 
-          target="_blank" 
+    <section id="publications" className="mb-14">
+      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">Selected Publications</h2>
+
+      <p className="mb-4 text-base">
+        [<a
+          href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
+          target="_blank"
           rel="noopener noreferrer"
-          className="text-link hover:underline font-medium"
+          className="font-medium text-link hover:underline"
         >
           Full List on Google Scholar
         </a>]
       </p>
-      
-      <ul className="space-y-6">
+
+      <ul className="space-y-4">
         {publications.map((pub, index) => (
-          <li key={index} className="text-base pl-6 border-l-2 border-muted hover:border-primary transition-colors pb-4">
-            <p className="mb-2 font-semibold text-foreground leading-relaxed">
+          <li key={index} className="border-l-2 border-muted pb-2 pl-4 text-base transition-colors hover:border-primary">
+            <p className="mb-1.5 font-semibold leading-snug text-foreground">
               {pub.title}
+              {getPublicationLink(pub) && (
+                <a
+                  href={getPublicationLink(pub)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 whitespace-nowrap text-sm font-medium text-link hover:underline"
+                >
+                  [link]
+                </a>
+              )}
+              {pub.github && (
+                <a
+                  href={pub.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium text-link hover:underline"
+                >
+                  <Github className="h-4 w-4" />
+                  [GitHub]
+                </a>
+              )}
             </p>
-            <p className="text-sm text-muted-foreground mb-2">
-              {pub.authors}
+            <p className="mb-1 text-sm leading-snug text-muted-foreground">
+              {renderAuthors(pub.authors)}
             </p>
-            <p className="text-sm mb-2">
+            <p className="text-sm leading-snug">
               <em className="text-foreground/80">{pub.venue}</em>
-              {pub.note && <span className="ml-2 font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded text-xs">{pub.note}</span>}
+              {pub.note && (
+                <span className={`ml-2 rounded px-2 py-0.5 text-xs font-semibold ${getNoteClassName(pub.note)}`}>
+                  {pub.note}
+                </span>
+              )}
             </p>
-            {pub.github && (
-              <a 
-                href={pub.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm text-link hover:underline"
-              >
-                <Github className="h-4 w-4" />
-                [GitHub]
-              </a>
-            )}
           </li>
         ))}
       </ul>
