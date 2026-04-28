@@ -21,16 +21,14 @@ The production output is generated in `dist/`.
 
 This repository is configured for GitHub Pages via GitHub Actions. Pushes to `main` or `master` run `.github/workflows/deploy.yml`, build the site, and publish `dist/`.
 
-Because the repository is currently `kongyanye/hanling.github.io`, GitHub Pages serves it as a project site:
+Because the repository is currently `hanling-thu/hanling-thu.github.io`, GitHub Pages serves it as a root user site:
 
 ```text
-https://kongyanye.github.io/hanling.github.io/
+https://hanling-thu.github.io/
 ```
 
 For this deployment path, `vite.config.ts` uses:
 
 ```ts
-base: "/hanling.github.io/"
+base: "/"
 ```
-
-If the site is moved to the root user-site repository `kongyanye/kongyanye.github.io`, change the Vite base back to `/`.
