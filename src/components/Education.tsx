@@ -4,25 +4,33 @@ const education = [
   {
     degree: "PhD in Computer Science",
     institution: "Tsinghua University",
-    year: "2019-2024"
+    year: "2020-2025"
   },
   {
-    degree: "Visiting Scholar",
-    institution: "Politecnico di Milano (CSC-funded)",
-    year: "2023-2024"
+    degree: "Algorithm Engineer (Full-time)",
+    institution: "Pengcheng Laboraotory",
+    year: "2020-2021"
+  },
+    {
+    degree: "Msc in Data Science and Information Technology",
+    institution: "Central South University",
+    year: "2017-2020"
   },
   {
-    degree: "BEng in Computer Science",
-    institution: "Sun Yat-sen University",
-    year: "2015-2019"
+    degree: "BSc in Computer Science",
+    institution: "Central South University",
+    year: "2013-2017"
   }
 ];
 
 const awards = [
-  "腾讯青云计划 (Tencent Qingyun Program)",
-  "国家留学基金委资助 (CSC Scholarship)",
-  "协助指导学生获华五推免offer",
-  "协助指导学生获大厂人才计划offer"
+  "2023香港博士生论坛Best Paper Award",
+  "2023鹏城实验室优秀博士生",
+  "2023鹏城实验室人才发展奖学金",
+  "2022鹏城实验室人才发展奖学金",
+  "2024清华大学校级综合优秀二等奖学金",
+  "2017湖南省优秀毕业生，中南大学优秀毕业生",
+  "2016国家励志奖学金"
 ];
 
 const Education = () => {

@@ -6,12 +6,12 @@ const Sidebar = () => {
       <div className="flex lg:flex-col lg:space-y-6 items-center lg:items-start gap-6 lg:gap-0">
         <div className="flex-shrink-0">
           <h1 className="text-2xl lg:text-4xl font-serif font-bold leading-tight mb-4 lg:mb-0">
-            Guorui Xie
+            Hanling Wang（王汉凌）
           </h1>
           
           <img
             src={profileImage}
-            alt="Guorui Xie"
+            alt="Hanling Wang"
             className="w-24 h-24 lg:w-full lg:aspect-square object-cover border-2 border-sidebar-foreground/20 mt-4 lg:mt-6"
           />
         </div>
@@ -35,10 +35,10 @@ const Sidebar = () => {
           <div className="space-y-2 text-sm border-t border-sidebar-foreground/20 pt-4 lg:pt-6">
             <p className="font-semibold">Contact:</p>
             <a 
-              href="mailto:xieguorui@pcl.ac.cn" 
+              href="mailto:wanghl03@pcl.ac.cn" 
               className="block hover:opacity-80 transition-opacity break-all opacity-90"
             >
-              xieguorui@pcl.ac.cn
+              wanghl03@pcl.ac.cn
             </a>
           </div>
         </div>

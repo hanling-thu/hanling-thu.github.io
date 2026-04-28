@@ -4,24 +4,19 @@ import { Brain, Eye, Network, Cpu } from "lucide-react";
 const researchAreas = [
   {
     icon: Network,
-    title: "可编程网络 Programmable Network",
-    description: "研究基于P4的可编程交换机技术，探索网络数据平面的灵活编程能力，实现高性能的网络功能。",
+    title: "分布式系统",
+    description: "研究分布式模型推理系统。",
   },
   {
     icon: Cpu,
-    title: "P4技术",
-    description: "深入研究P4语言及其在网络设备中的应用，开发创新的数据平面算法和架构。",
+    title: "大模型推理加速",
+    description: "投机解码、MoE等。",
   },
   {
     icon: Brain,
-    title: "AI/LLM网络应用",
-    description: "探索人工智能和大语言模型在网络领域的应用，包括智能网络攻击检测、网络优化等。",
-  },
-  {
-    icon: Eye,
-    title: "网内智能 In-Network Intelligence",
-    description: "研究在网络设备中实现智能算法，通过知识蒸馏等技术在可编程交换机上部署机器学习模型。",
-  },
+    title: "边云协同计算",
+    description: "边缘智能",
+  }
 ];
 
 const Research = () => {

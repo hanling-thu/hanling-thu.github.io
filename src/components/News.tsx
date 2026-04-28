@@ -3,12 +3,12 @@ import { Users, Briefcase } from "lucide-react";
 const newsItems = [
   {
     icon: Users,
-    date: "2025",
-    content: "招收学生：鹏城-中山/西电联培博士（1~2名，26年入学）；科研实习生（可推免清华，长期招收）。本人及协助指导的学生都曾获大厂人才及华五推免offer。"
+    date: "2026",
+    content: "招收学生：鹏城-中山联培博士（1名，26年入学）；科研实习生（可推免清华，长期招收）。本人及协助指导的学生都曾获大厂人才及华五推免offer。"
   },
   {
     icon: Briefcase,
-    date: "2025",
+    date: "2026",
     content: "招聘信息：鹏城实验室研究人员（长期）；博士后研究员（年薪56万+，海外回国博后68万+）。"
   }
 ];

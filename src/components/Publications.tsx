@@ -1,5 +1,76 @@
 import { Github } from "lucide-react";
 
+// replace publications with my own (listed below), you may want to search for the metadata
+// HoloTrace: LLM-based Bidirectional Causal Knowledge Graph for Edge-Cloud Video Anomaly Detection
+// Hanling Wang, Qing Li, Li Chen et al.
+// •
+// MM '25
+// •
+// Oct 2025
+
+// PEE: Precise ECN Encoding for Efficient Congestion Control in Data Center Networks
+// Changlin Jiang, Yi Wu, Hanling Wang et al.
+// •
+// 2025 IEEE 45th International Conference on Distributed Computing Systems (ICDCS)
+// •
+// Jul 2025
+
+// VaVLM: Toward Efficient Edge-Cloud Video Analytics With Vision-Language Models
+// Yang Zhang, Hanling Wang, Qingshun Bai et al.
+// •
+// IEEE Transactions on Broadcasting
+// •
+// Jan 2025
+
+// ParaLoupe: Real-Time Video Analytics on Edge Cluster via Mini Model Parallelization
+// Hanling Wang, Qing Li, Haidong Kang et al.
+// •
+// IEEE Transactions on Mobile Computing
+// •
+// Aug 2024
+
+// Joint Configuration Optimization and GPU Allocation for Multi-Tenant Real-Time Video Analytics on Resource-Constrained Edge
+// Hanling Wang, Tianyu Li, Mei Zhang et al.
+// •
+// IEEE Transactions on Mobile Computing
+// •
+// Jan 2024
+
+// CL-Shield: A Continuous Learning System for Protecting User Privacy
+// Tianyu Li, Hanling Wang, Qing Li et al.
+// •
+// IEEE Transactions on Mobile Computing
+// •
+// Jan 2024
+
+// SkyNet: Multi-Drone Cooperation for Real-Time Person Identification and Localization
+// Junkun Peng, Qing Li, Yuanzheng Tan et al.
+// •
+// IEEE INFOCOM 2023 - IEEE Conference on Computer Communications
+// •
+// May 2023
+
+// VaBUS: Edge-Cloud Real-Time Video Analytics via Background Understanding and Subtraction
+// Hanling Wang, Qing Li, Heyang Sun et al.
+// •
+// IEEE Journal on Selected Areas in Communications
+// •
+// Nov 2022
+
+// Anomaly detection in surface mount technology process using multi-modal data
+// Mingyang Li, Hanling Wang, Yue Zhang et al.
+// •
+// SenSys '19
+// •
+// Nov 2019
+
+// Unsupervised anomaly detection via generative adversarial networks
+// Hanling Wang, Mingyang Li, Fei Ma et al.
+// •
+// IPSN '19
+// •
+
+
 const publications = [
   {
     title: "Intelligent In-Network Attack Detection on Programmable Switches with Soterv2",

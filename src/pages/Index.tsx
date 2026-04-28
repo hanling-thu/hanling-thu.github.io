@@ -12,21 +12,21 @@ const Index = () => {
       <main className="lg:ml-72 py-8 px-4 sm:px-6 lg:py-16 lg:px-20 max-w-6xl">
         <section className="mb-12 lg:mb-16 leading-relaxed">
           <p className="text-base lg:text-lg mb-4 text-foreground/90">
-            Welcome! I received my BEng (2019) and PhD (2024) degrees from <a href="https://www.sysu.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">SYSU</a> and <a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Tsinghua</a> (China), respectively. 
-            I was also a CSC-funded research visitor at <a href="https://www.polimi.it/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Polimi</a> (Italy, 2023~2024).
+            Welcome! I received my Bsc (2017) from <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">CSU</a>, Msc (2020) from Tsnghua University, and <a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Tsinghua</a> (China), respectively. 
+            I am currently an assistant researcher at <a href="https://www.pcl.ac.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline">Pengcheng Laboratory (PCL)</a>.
           </p>
           <p className="text-base lg:text-lg mb-6 text-foreground/90">
-            我在2019年本科毕业于中山大学、2024年博士毕业于清华大学，曾获国家留学基金资助海外联培（2023~2024）、腾讯青云计划。
-            主要研究可编程网络、P4技术、AI/LLM的网络应用等。
+            我在2017年本科毕业于中南大学、2020年硕士毕业于清华大学、2025年博士毕业于清华大学。目前任职于鹏城实验室，担任助理研究员，课题组官网Smart Internet Group（www.smartinternet.group）。
+            主要研究分布式系统、大模型推理加速、边云协同计算等。
           </p>
           
           <p className="text-sm lg:text-base mb-3">
-            Research interests: <strong className="text-foreground">Programmable Network, P4 Technology, AI/LLM Network Applications</strong>
+            Research interests: <strong className="text-foreground">Distributed System, LLM Inference Acceleration, edge-cloud colloborative computing</strong>
           </p>
           
           <p className="text-sm lg:text-base mb-6">
             [<a 
-              href="https://scholar.google.com/citations?user=DaHzpI0AAAAJ" 
+              href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-link hover:underline"
@@ -36,7 +36,7 @@ const Index = () => {
           </p>
           
           <p className="text-sm lg:text-base font-semibold text-foreground bg-muted px-3 py-2 lg:px-4 lg:py-3 rounded border-l-4 border-primary">
-            欢迎对可编程网络、P4、网络智能等方向感兴趣的同学联系我！
+            欢迎对分布式系统、大模型推理加速、边云协同计算的同学联系我！
           </p>
         </section>
 
