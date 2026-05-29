@@ -9,24 +9,24 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="border-b border-sidebar-foreground/10 bg-sidebar p-6 text-sidebar-foreground lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-80 lg:overflow-y-auto lg:border-b-0 lg:border-r lg:p-10">
-      <div className="flex flex-col gap-6 min-[380px]:flex-row lg:flex-col lg:gap-0">
+    <aside className="border-b border-sidebar-foreground/10 bg-sidebar p-5 text-sidebar-foreground sm:p-6 lg:fixed lg:left-0 lg:top-0 lg:flex lg:h-screen lg:w-80 lg:items-center lg:overflow-hidden lg:border-b-0 lg:border-r lg:p-6">
+      <div className="flex flex-col gap-5 min-[380px]:flex-row lg:w-full lg:flex-col lg:items-center lg:gap-0 lg:text-center">
         <img
           src={profileImage}
           alt="Hanling Wang"
-          className="h-28 w-28 flex-shrink-0 border border-sidebar-foreground/20 object-cover shadow-soft sm:h-32 sm:w-32 lg:mb-7 lg:aspect-square lg:h-auto lg:w-full"
+          className="aspect-[4/5] w-28 flex-shrink-0 border border-sidebar-foreground/20 object-cover object-top shadow-soft sm:w-32 lg:mb-5 lg:w-44"
         />
 
         <div className="min-w-0 flex-1 lg:w-full">
           <div className="space-y-2">
-            <h1 className="font-serif text-3xl font-bold leading-tight tracking-normal lg:text-4xl">
+            <h1 className="font-serif text-3xl font-bold leading-tight tracking-normal">
               王汉凌
             </h1>
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-sidebar-foreground/65">
               Hanling Wang
             </p>
-            <p className="pt-3 text-base font-semibold leading-relaxed">
-              助理研究员 · 博士生导师
+            <p className="pt-3 text-base font-semibold leading-relaxed lg:pt-2">
+              助理研究员 · 博导
             </p>
             <a
               href="https://www.pcl.ac.cn/"
@@ -34,21 +34,21 @@ const Sidebar = () => {
               rel="noopener noreferrer"
               className="block text-sm leading-relaxed opacity-85 transition-opacity hover:opacity-100"
             >
-              鹏城实验室
+              鹏城国家实验室
             </a>
           </div>
 
-          <div className="mt-6 space-y-5 text-sm leading-relaxed lg:mt-8">
-            <section className="border-t border-sidebar-foreground/20 pt-5">
+          <div className="mt-5 space-y-4 text-sm leading-relaxed lg:mt-5 lg:space-y-3 lg:leading-normal">
+            <section className="border-t border-sidebar-foreground/20 pt-4 lg:pt-3">
               <h2 className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-sidebar-foreground/55">
                 Research
               </h2>
-              <p className="opacity-90">
+              <p className="opacity-90 lg:mx-auto lg:max-w-56">
                 分布式系统 · 大模型推理加速 · 边云协同计算
               </p>
             </section>
 
-            <section className="border-t border-sidebar-foreground/20 pt-5">
+            <section className="border-t border-sidebar-foreground/20 pt-4 lg:pt-3">
               <h2 className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-sidebar-foreground/55">
                 Contact
               </h2>
@@ -70,11 +70,11 @@ const Sidebar = () => {
               </div>
             </section>
 
-            <nav className="border-t border-sidebar-foreground/20 pt-5" aria-label="页面导航">
-              <h2 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-sidebar-foreground/55">
+            <nav className="border-t border-sidebar-foreground/20 pt-4 lg:pt-3" aria-label="页面导航">
+              <h2 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-sidebar-foreground/55 lg:mb-2">
                 Navigation
               </h2>
-              <div className="grid grid-cols-2 gap-x-3 gap-y-2 lg:grid-cols-1">
+              <div className="grid grid-cols-2 gap-x-3 gap-y-2 lg:grid-cols-1 lg:gap-y-1">
                 {navItems.map((item) => (
                   <a
                     key={item.href}
