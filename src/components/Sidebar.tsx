@@ -54,10 +54,10 @@ const Sidebar = () => {
               </h2>
               <div className="space-y-2">
                 <a
-                  href="mailto:wanghl03@pcl.ac.cn"
+                  href="mailto:hanling.thu@gmail.com"
                   className="block break-all opacity-90 transition-opacity hover:opacity-100"
                 >
-                  wanghl03@pcl.ac.cn
+                  hanling.thu@gmail.com
                 </a>
                 <a
                   href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
