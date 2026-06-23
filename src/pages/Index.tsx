@@ -2,6 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
 import Research from "@/components/Research";
 import Publications from "@/components/Publications";
+import Standards from "@/components/Standards";
 import Patents from "@/components/Patents";
 
 const Index = () => {
@@ -20,13 +21,14 @@ const Index = () => {
               <a href="https://www.pcl.ac.cn/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 鹏城实验室 </a>
               算法工程师，现任<strong className="font-semibold text-foreground"> 鹏城实验室助理研究员、博士生导师 </strong>，目前所在团队为
               <a href="https://www.smartinternet.group/" target="_blank" rel="noopener noreferrer" className="text-link hover:underline"> 清华智能网络团队 </a>
-              。我曾获香港博士生论坛 Best Paper Award、鹏城实验室优秀博士生、鹏城实验室人才发展奖学金、清华大学校级综合奖学金等荣誉，长期担任NeurIPS、AAAI、ICLR、ECCV、CVPR、MM、IEEE Network等会议和期刊审稿人。
+              。我曾获清华大学校级综合奖学金、鹏城实验室优秀博士生、鹏城实验室人才发展奖学金等荣誉，论文曾获IEEE BTS 2026 Scott Helt Memorial Award、2023年香港博士生论坛 Best Paper Award，长期担任NeurIPS、AAAI、ICLR、ECCV、CVPR、MM、IEEE Network等会议和期刊审稿人。
             </p>
           </section>
 
           <Research />
           <News />
           <Publications />
+          <Standards />
           <Patents />
         </div>
       </main>

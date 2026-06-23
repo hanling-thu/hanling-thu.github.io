@@ -1,12 +1,19 @@
-import { Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const publications = [
+  {
+    title: "Intelligence Delivery Network: Toward an Internet Architecture for the AI Age",
+    authors: "Hanling Wang, Qing Li, Dan Zhao, Yuhong Song, Xingchi Chen, Teng Gao, Peiyuan Zong, Zhuyun Qi, Yue Yu, Yong Jiang",
+    venue: "arXiv preprint, 2026",
+    note: "arXiv",
+    link: "https://arxiv.org/abs/2605.13235",
+  },
   {
     title: "SketchVision: Bandwidth-Efficient Edge-Cloud Video Object Detection via Compressed Sketches",
     authors: "Hanling Wang, Qing Li, Zhangzhang Jiang, Zepeng Bao, Yong Jiang, Zhenhui Yuan, Gabriel-Miro Muntean",
     venue: "IEEE Transactions on Broadcasting, 2026",
     note: "JCR Q1",
-    // link: "",
+    link: "https://ieeexplore.ieee.org/document/11495562",
   },
   {
     title: "JumpDASH: LLM-Based Content Perception for Intelligent Jumping DASH in Mobile Adaptive Video Streaming",
@@ -40,9 +47,10 @@ const publications = [
   },
   {
     title: "VaVLM: Toward Efficient Edge-Cloud Video Analytics With Vision-Language Models",
-    authors: "Yang Zhang, Hanling Wang, Qing Bai, Haifeng Liang, Peican Zhu, Gabriel-Miro Muntean, Qing Li",
+    authors: "Yang Zhang*, Hanling Wang*, Qing Bai, Haifeng Liang, Peican Zhu, Gabriel-Miro Muntean, Qing Li",
     venue: "IEEE Transactions on Broadcasting, 2025",
     note: "JCR Q1",
+    award: "IEEE BTS 2026 Scott Helt Memorial Award",
     doi: "https://ieeexplore.ieee.org/document/10947590",
   },
   {
@@ -78,6 +86,7 @@ const publications = [
     authors: "Hanling Wang, Qing Li, Heyang Sun, Zuozhou Chen, Yingqian Hao, Junkun Peng, Zhenhui Yuan, Junsheng Fu, Yong Jiang",
     venue: "IEEE Journal on Selected Areas in Communications, 2023",
     note: "CCF A",
+    award: "Best Paper Award, 2023 International Doctoral Forum at CUHK",
     doi: "https://ieeexplore.ieee.org/document/9953098/",
     // github: "https://github.com/kongyanye/VaBUS",
   },
@@ -124,17 +133,21 @@ const getPublicationLink = (pub: { doi?: string; link?: string }) =>
 const Publications = () => {
   return (
     <section id="publications" className="mb-14">
-      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">Selected Publications</h2>
-
-      <p className="mb-4 text-base">
-        [<a
+      <div className="mb-5 flex flex-col gap-2 border-b border-border pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <h2 className="font-serif text-2xl font-bold text-foreground lg:text-3xl">Selected Publications</h2>
+        <a
           href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-link hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-medium text-link hover:underline"
         >
-          Full List on Google Scholar
-        </a>]
+          Google Scholar
+          <ExternalLink className="h-3.5 w-3.5" />
+        </a>
+      </div>
+
+      <p className="mb-4 text-sm text-muted-foreground">
+        * Equal contribution
       </p>
 
       <ul className="space-y-4">
@@ -172,6 +185,11 @@ const Publications = () => {
               {pub.note && (
                 <span className={`ml-2 rounded px-2 py-0.5 text-xs font-semibold ${getNoteClassName(pub.note)}`}>
                   {pub.note}
+                </span>
+              )}
+              {pub.award && (
+                <span className="ml-2 rounded bg-rose-100 px-2 py-0.5 text-xs font-semibold text-rose-700 ring-1 ring-inset ring-rose-200">
+                  {pub.award}
                 </span>
               )}
             </p>

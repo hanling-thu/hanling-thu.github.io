@@ -4,17 +4,18 @@ const navItems = [
   { href: "#research", label: "研究方向" },
   { href: "#news", label: "最新动态" },
   { href: "#publications", label: "论文" },
+  { href: "#standards", label: "标准" },
   { href: "#patents", label: "专利" },
 ];
 
 const Sidebar = () => {
   return (
     <aside className="border-b border-sidebar-foreground/10 bg-sidebar p-5 text-sidebar-foreground sm:p-6 lg:fixed lg:left-0 lg:top-0 lg:flex lg:h-screen lg:w-80 lg:items-center lg:overflow-hidden lg:border-b-0 lg:border-r lg:p-6">
-      <div className="flex flex-col gap-5 min-[380px]:flex-row lg:w-full lg:flex-col lg:items-center lg:gap-0 lg:text-center">
+      <div className="flex flex-col gap-5 lg:w-full lg:items-center lg:gap-0 lg:text-center">
         <img
           src={profileImage}
           alt="Hanling Wang"
-          className="aspect-[4/5] w-28 flex-shrink-0 border border-sidebar-foreground/20 object-cover object-top shadow-soft sm:w-32 lg:mb-5 lg:w-44"
+          className="h-auto w-28 flex-shrink-0 self-center border border-sidebar-foreground/20 shadow-soft sm:w-32 lg:mb-5 lg:w-44"
         />
 
         <div className="min-w-0 flex-1 lg:w-full">
