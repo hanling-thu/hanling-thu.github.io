@@ -1,6 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
 import Research from "@/components/Research";
+import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
 import Standards from "@/components/Standards";
 import Patents from "@/components/Patents";
@@ -28,6 +29,7 @@ const Index = () => {
           <Research />
           <News />
           <Publications />
+          <Projects />
           <Standards />
           <Patents />
         </div>

@@ -81,7 +81,7 @@ const renderAuthors = (authors: string) => {
 const Patents = () => {
   return (
     <section id="patents" className="mb-14">
-      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">专利</h2>
+      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">发明专利</h2>
 
       <ul className="space-y-1.5">
         {patents.map((patent, index) => (

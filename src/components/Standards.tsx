@@ -34,7 +34,7 @@ const renderAuthors = (authors: string) => {
 const Standards = () => {
   return (
     <section id="standards" className="mb-14">
-      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">标准化工作</h2>
+      <h2 className="mb-5 border-b border-border pb-3 font-serif text-2xl font-bold text-foreground lg:text-3xl">国际标准</h2>
 
       <ul className="space-y-4">
         {drafts.map((draft, index) => (

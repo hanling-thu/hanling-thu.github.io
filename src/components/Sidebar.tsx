@@ -4,6 +4,7 @@ const navItems = [
   { href: "#research", label: "研究方向" },
   { href: "#news", label: "最新动态" },
   { href: "#publications", label: "论文" },
+  { href: "#projects", label: "项目" },
   { href: "#standards", label: "标准" },
   { href: "#patents", label: "专利" },
 ];
