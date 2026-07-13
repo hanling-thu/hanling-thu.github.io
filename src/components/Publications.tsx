@@ -2,6 +2,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const publications = [
   {
+    title: "SkillCache: Capability Caching via Multi-View Coupled Skill Operators for Low-Latency Multimodal Edge Intelligence",
+    authors: "Jiaqi Cui, Fumin Su, Hanling Wang†, Yuanzheng Tan, Gabriel-Miro Muntean, Qing Li†, Yong Jiang",
+    venue: "ACM Multimedia (ACM MM), 2026",
+    note: "CCF A",
+    status: "Accepted, to appear",
+  },
+  {
     title: "Intelligence Delivery Network: Toward an Internet Architecture for the AI Age",
     authors: "Hanling Wang, Qing Li, Dan Zhao, Yuhong Song, Xingchi Chen, Teng Gao, Peiyuan Zong, Zhuyun Qi, Yue Yu, Yong Jiang",
     venue: "arXiv preprint, 2026",
@@ -34,7 +41,7 @@ const publications = [
   {
     title: "HoloTrace: LLM-based Bidirectional Causal Knowledge Graph for Edge-Cloud Video Anomaly Detection",
     authors: "Hanling Wang, Qing Li, Li Chen, Haidong Kang, Fei Ma, Yong Jiang",
-    venue: "ACM Multimedia (MM), 2025",
+    venue: "ACM Multimedia (ACM MM), 2025",
     note: "CCF A",
     doi: "https://dl.acm.org/doi/10.1145/3746027.3755185",
   },
@@ -147,7 +154,7 @@ const Publications = () => {
       </div>
 
       <p className="mb-4 text-sm text-muted-foreground">
-        * Equal contribution
+        * Equal contribution  † Corresponding author
       </p>
 
       <ul className="space-y-4">
@@ -182,6 +189,9 @@ const Publications = () => {
             </p>
             <p className="text-sm leading-snug">
               <em className="text-foreground/80">{pub.venue}</em>
+              {pub.status && (
+                <span className="text-muted-foreground"> ({pub.status})</span>
+              )}
               {pub.note && (
                 <span className={`ml-2 rounded px-2 py-0.5 text-xs font-semibold ${getNoteClassName(pub.note)}`}>
                   {pub.note}
