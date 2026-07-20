@@ -30,6 +30,13 @@ const patents = [
   {
     type: "发明专利",
     authors: "李清，王汉凌，江勇",
+    title: "基于压缩轮廓图的带宽优化目标检测方法及系统",
+    status: "已授权",
+    number: "公开号：CN117893882A",
+  },
+  {
+    type: "发明专利",
+    authors: "李清，王汉凌，江勇",
     title: "基于边缘设备的图像处理方法、电子设备及存储介质",
     status: "实审",
     number: "公开号：CN117058208A",
@@ -40,13 +47,6 @@ const patents = [
     title: "网络仿真拓扑生成方法、系统、电子设备及存储介质",
     status: "实审",
     number: "公开号：CN117354162A",
-  },
-  {
-    type: "发明专利",
-    authors: "李清，王汉凌，江勇",
-    title: "基于压缩轮廓图的带宽优化目标检测方法及系统",
-    status: "实审",
-    number: "公开号：CN117893882A",
   },
   {
     type: "发明专利",
