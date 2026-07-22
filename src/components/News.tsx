@@ -1,4 +1,4 @@
-import { Award, Briefcase, Flame, Users } from "lucide-react";
+import { Award, Briefcase, TrendingUp, Users } from "lucide-react";
 
 const Highlight = ({ children }: { children: React.ReactNode }) => (
   <strong className="font-semibold text-primary">{children}</strong>
@@ -37,6 +37,8 @@ const newsItems = [
     content: (
       <>
         欢迎对分布式系统、大模型推理加速、边云协同计算感兴趣的同学联系，长期招收<Highlight>科研实习生</Highlight>（大二/大三），可支持推免清华。
+        <br />
+        多名往届学生已保研至清华（本部 & 深圳）、北大（本部）等。
       </>
     )
   },
@@ -65,7 +67,7 @@ const News = () => {
               <div>
                 <p className="mb-1 text-sm font-medium text-muted-foreground">{item.date}</p>
                 <p className="flex gap-2 text-base leading-snug text-foreground/90 lg:text-[1.03rem]">
-                  <Flame className="mt-1 h-4 w-4 flex-shrink-0 text-accent" />
+                  <TrendingUp className="mt-1 h-4 w-4 flex-shrink-0 text-red-600" />
                   <span>{item.content}</span>
                 </p>
               </div>

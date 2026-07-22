@@ -1,4 +1,5 @@
 import Sidebar from "@/components/Sidebar";
+import Advisors from "@/components/Advisors";
 import News from "@/components/News";
 import Research from "@/components/Research";
 import Projects from "@/components/Projects";
@@ -26,6 +27,7 @@ const Index = () => {
             </p>
           </section>
 
+          <Advisors />
           <Research />
           <News />
           <Publications />

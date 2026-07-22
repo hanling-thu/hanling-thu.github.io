@@ -1,6 +1,7 @@
 import profileImage from "../../hanling.JPG";
 
 const navItems = [
+  { href: "#advisors", label: "合作导师" },
   { href: "#research", label: "研究方向" },
   { href: "#news", label: "最新动态" },
   { href: "#publications", label: "论文" },
@@ -56,10 +57,14 @@ const Sidebar = () => {
               </h2>
               <div className="space-y-2">
                 <a
-                  href="mailto:hanling.thu@gmail.com"
                   className="block break-all opacity-90 transition-opacity hover:opacity-100"
                 >
                   hanling.thu@gmail.com
+                </a>
+                <a
+                  className="block break-all opacity-90 transition-opacity hover:opacity-100"
+                >
+                  wanghl03@pcl.ac.cn
                 </a>
                 <a
                   href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
