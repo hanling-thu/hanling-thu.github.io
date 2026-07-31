@@ -27,7 +27,7 @@ const Index = () => {
             </p>
           </section>
 
-          <Advisors />
+          {/* <Advisors /> */}
           <Research />
           <News />
           <Publications />
