@@ -2,6 +2,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const publications = [
   {
+    title: "xDroneVA: Cross-Drone Inference for Efficient Real-Time Video Analytics",
+    authors: "Hanling Wang, Qing Li†, Yixin Zheng, Siru Chen, Yuanzheng Tan, Yu Zhang, Lianbo Ma, Yong Jiang",
+    venue: "IEEE Transactions on Mobile Computing (IEEE TMC), 2026",
+    note: "CCF A",
+    status: "Accepted, to appear",
+  },
+  {
     title: "SkillCache: Capability Caching via Multi-View Coupled Skill Operators for Low-Latency Multimodal Edge Intelligence",
     authors: "Jiaqi Cui, Fumin Su, Hanling Wang†, Yuanzheng Tan, Gabriel-Miro Muntean, Qing Li†, Yong Jiang",
     venue: "ACM Multimedia (ACM MM), 2026",
