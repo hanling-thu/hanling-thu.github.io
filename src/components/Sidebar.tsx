@@ -1,7 +1,6 @@
 import profileImage from "../../hanling.JPG";
 
 const navItems = [
-  { href: "#advisors", label: "合作导师" },
   { href: "#research", label: "研究方向" },
   { href: "#news", label: "最新动态" },
   { href: "#publications", label: "论文" },
@@ -17,7 +16,7 @@ const Sidebar = () => {
         <img
           src={profileImage}
           alt="Hanling Wang"
-          className="h-auto w-28 flex-shrink-0 self-center border border-sidebar-foreground/20 shadow-soft sm:w-32 lg:mb-5 lg:w-44"
+          className="h-28 w-28 flex-shrink-0 self-center rounded-full border border-sidebar-foreground/20 object-cover shadow-soft sm:h-32 sm:w-32 lg:mb-5 lg:h-44 lg:w-44"
         />
 
         <div className="min-w-0 flex-1 lg:w-full">
@@ -49,6 +48,14 @@ const Sidebar = () => {
               <p className="opacity-90 lg:mx-auto lg:max-w-56">
                 分布式系统 · 大模型推理加速 · 边云协同计算
               </p>
+              <a
+                href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block opacity-90 transition-opacity hover:opacity-100"
+              >
+                Google Scholar
+              </a>
             </section>
 
             <section className="border-t border-sidebar-foreground/20 pt-4 lg:pt-3">
@@ -65,14 +72,6 @@ const Sidebar = () => {
                   className="block break-all opacity-90 transition-opacity hover:opacity-100"
                 >
                   wanghl03@pcl.ac.cn
-                </a>
-                <a
-                  href="https://scholar.google.com/citations?user=LhUh3sYAAAAJ&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block opacity-90 transition-opacity hover:opacity-100"
-                >
-                  Google Scholar
                 </a>
               </div>
             </section>
